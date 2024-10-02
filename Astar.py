@@ -1,4 +1,4 @@
-def aStarAlgo(start, stop):
+def astaralgo(start, stop):
     open_set = set(start)
     closed_set = set()
     g = {}
@@ -80,7 +80,7 @@ def heuristic(n):
 
 
 Graph = {
-    'S':[('B',2),('A',3),('C',5)],
+    'S': [('B',2),('A',3),('C',5)],
     'A': [('C', 3), ('G', 2)],
     'B': [('D', 6), ('A', 4)],
     'C': [('B', 4), ('H', 3)],
@@ -91,4 +91,4 @@ Graph = {
     'H': [('A', 4), ('D', 4)],
 
 }
-aStarAlgo('S', 'F')
+astaralgo('S', 'F')
